@@ -30,7 +30,7 @@
 #define MATRIX_ROWS 7
 #define MATRIX_COLS 6 // For split keyboards, define columns for one side only.
 
-#define LAYERS 3 // number of layers defined
+#define LAYERS 1 // number of layers defined
 
 // Select diode direction
 #define COL2ROW
@@ -54,7 +54,7 @@
  * use ADC1 only,  */
 
 // #define BATT_STAT //define to enable battery monitoring
-// #define BATT_PIN ADC1_CHANNEL_7 //gpio pin 35, refer to the esp32 before modifying
+#define BATT_PIN ADC1_CHANNEL_7 //gpio pin 35, refer to the esp32 before modifying
 
 //deep sleep parameters, mind that reconnecting after deep sleep might take a minute or two
 #define SLEEP_MINS 5 // undefine if you do not need deep sleep, otherwise define number of minutes for deepsleep
